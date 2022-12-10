@@ -21,7 +21,7 @@ dataframe = pd.read_csv(
 
 # We have a limited budget, therefore we would like to exclude
 # listings with a price above 100 euros per night
-dataframe = dataframe[(dataframe["Price"] <= 100) & ( (dataframe["Price"] > 0) | (dataframe["Meters from chosen location"] == 0)]
+dataframe = dataframe[(dataframe["Price"] <= 100) & ( (dataframe["Price"] > 0) | (dataframe["Meters from chosen location"] == 0))]
 
 # Display as integer
 dataframe["Airbnb Listing ID"] = dataframe["Airbnb Listing ID"].astype(int)
